@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+</nav>
+
+<header>
+
+<h1>Contact Me</h1>
+
+<p>If you have any questions, send me a message.</p>
+
+<form onsubmit="sendMessage(event)">
+
+<label>Name</label><br>
+<input type="text" name="name" required><br><br>
+
+<label>Email</label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Message</label><br>
+<textarea name="message" rows="5" required></textarea><br><br>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</header>
+
+<script>
+function sendMessage(event){
+event.preventDefault();
+alert("Message Sent!");
+}
+</script>
+
+</body>
+</html>
